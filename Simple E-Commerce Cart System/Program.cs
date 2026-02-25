@@ -17,42 +17,46 @@ using Simple_E_Commerce_Cart_System;
 //pt.Age = 14;
 //pt.DisplaySalery();
 
-PartTime a = new PartTime();
-while (true)
-{
-    Console.WriteLine("====== Just for practise ======");
-    Console.WriteLine("1. add employee name");
-    Console.WriteLine("2. add age");
-    Console.WriteLine("3. display");
-    Console.WriteLine("4. Exit");
-    Console.Write("Enter choice: ");
+time t = new time();
+t.DisplayDate();
 
-    int choice;
-    if (!int.TryParse(Console.ReadLine(), out choice))
-    {
-        Console.WriteLine("Invalid input. Try again.\n");
-        continue;
-    }
 
-    if (choice == 1)
-    {
-        Console.Write("Enter name of person: ");
-        a.Name = Console.ReadLine();
-    }
-    else if (choice == 2)
-    {
-        Console.Write("Enter age of person: ");
-        a.Age = int.Parse(Console.ReadLine());
-    }
-    else if (choice == 3)
-    {
-        a.DisplaySalery();   
-    }
-    else if (choice == 4)
-    {
-        break;
-    }
-}
+//PartTime a = new PartTime();
+//while (true)
+//{
+//    Console.WriteLine("====== Just for practise ======");
+//    Console.WriteLine("1. add employee name");
+//    Console.WriteLine("2. add age");
+//    Console.WriteLine("3. display");
+//    Console.WriteLine("4. Exit");
+//    Console.Write("Enter choice: ");
+
+//    int choice;
+//    if (!int.TryParse(Console.ReadLine(), out choice))
+//    {
+//        Console.WriteLine("Invalid input. Try again.\n");
+//        continue;
+//    }
+
+//    if (choice == 1)
+//    {
+//        Console.Write("Enter name of person: ");
+//        a.Name = Console.ReadLine();
+//    }
+//    else if (choice == 2)
+//    {
+//        Console.Write("Enter age of person: ");
+//        a.Age = int.Parse(Console.ReadLine());
+//    }
+//    else if (choice == 3)
+//    {
+//        a.DisplaySalery();   
+//    }
+//    else if (choice == 4)
+//    {
+//        break;
+//    }
+//}
 
 
 
